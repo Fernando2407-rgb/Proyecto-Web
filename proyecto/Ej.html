@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducción Automática</title>
+</head>
+<body>
+    <h1>Audio Automático</h1>
+    <audio id="bg-audio" src="Adrenaline.mp3" autoplay loop muted></audio>
+
+    <script>
+        // Intenta activar el sonido después de la primera interacción
+        document.addEventListener("click", () => {
+            const audio = document.getElementById("bg-audio");
+            audio.muted = false;
+            audio.play();
+        });
+    </script>
+</body>
+</html>

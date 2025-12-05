@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                Laboral
+            </legend>
+            <input type="checkbox" name="contratos[]" id="ajena">
+            Por cuenta ajena
+            <input type="checkbox" name="contratos[]" id="autonomo">
+            Autónomo
+            <br />
+            ¿Alguna vez en el extranjero?
+            <br />
+            <input type="radio" name="en_extranjero" id="si_en_extranjero">
+            Sí
+
+            <select name="lugar">
+                <option id="en_ue">
+                    Dentro de la UE
+                </option>
+                <option id="en_asia">
+                    En Asia
+                </option>
+                <option id="en_hispanoamerica">
+                    En Hispanoamérica
+                </option>
+                <option id="en_eeuu">
+                    En EE.UU
+                </option>
+                <option id="en_otro">
+                    En otro
+                </option>
+            </select>
+            <br />
+            <input type="radio" name="en_extranjero" id="no_en_extranjero">
+            No
+        </fieldset>
+        <fieldset>
+            <legend>
+                Personal
+            </legend>
+            Apellidos y nombre:
+            <input type="text" id="ap_nombre">
+            <br />
+            Conocimientos sobre:<br />
+            <select name="cono" multiple>
+                <option id="informatica">
+                    Informática
+                </option>
+                <option id="conduccion">
+                    Conducción
+                </option>
+                <option id="finanzas">
+                    Finanzas
+                </option>
+                <option id="leyes">
+                    Leyes
+                </option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+
+</html>

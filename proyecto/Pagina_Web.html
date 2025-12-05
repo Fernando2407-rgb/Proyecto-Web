@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Web</title>
+
+<link rel="stylesheet" href="Proyecto_Web.css" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- AUDIO -->
+<audio id="bg-audio" src="gear.mp3" autoplay loop muted></audio>
+
+<!-- MENÚ -->
+<header class="menu">
+    <h2>Aplicaciones Web</h2>
+    <nav>
+        <button class="nav-btn" data-target="principal">Introducción</button>
+        <button class="nav-btn" data-target="html">HTML</button>
+        <button class="nav-btn" data-target="Ejercicioshtml">Ejercicios HTML</button>
+        <button class="nav-btn" data-target="css">CSS</button>
+        <button class="nav-btn" data-target="Ejercicioscss">Ejercicios CSS</button>
+        <button class="nav-btn" data-target="Tablaperiodica">Tabla Periódica</button>
+        <button class="nav-btn" data-target="Acercademi">Acerca de mí</button>
+
+        <!-- 🔥 NUEVOS BOTONES -->
+        <button class="nav-btn" data-target="revista">Revista</button>
+        <button class="nav-btn" data-target="presentaciones">Presentaciones</button>
+    </nav>
+</header>
+
+<!-- VIDEO FONDO -->
+<video autoplay muted loop class="mivideo1">
+    <source src="https://play.vsthemes.org/fhd/05/1305.webm" type="video/mp4">
+</video>
+
+<div class="content-container">
+
+    <!-- INTRODUCCIÓN -->
+    <div id="principal" class="section active">
+        <h1>Introducción a Aplicaciones Web</h1>
+        <p>Bienvenido a este sitio de tutoriales web. Aquí encontrarás recursos para aprender desarrollo web desde cero.</p>
+
+        <div class="card">
+            <h3>Características principales</h3>
+            <ul>
+                <li>Tutoriales de HTML y CSS</li>
+                <li>Ejemplos prácticos</li>
+                <li>Interfaz amigable</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HTML -->
+    <div id="html" class="section">
+        <h1>HTML</h1>
+        <p> HTML significa HyperText Markup Language</b> y es el lenguaje estándar utilizado para crear
+        páginas web. Todo comenzó a finales de los años 80, cuando el científico británico 
+        <b>Tim Berners-Lee</b> trabajaba en el CERN y buscaba una forma de compartir información entre
+        investigadores de manera fácil y rápida.</p>
+
+        <div class="card">
+            <h3>Historia de HTML</h3>
+            <p>En 1990, Berners-Lee creó los primeros conceptos de la web: el navegador, el servidor 
+            y un lenguaje sencillo para estructurar documentos, conocido como HTML.
+            Las primeras versiones eran muy básicas y solo permitían texto y enlaces.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estructura básica HTML</h3>
+            <ul>
+                <li>&lt;!DOCTYPE html&gt;</li>
+                <li>&lt;html&gt;</li>
+                <li>&lt;head&gt;</li>
+                <li>&lt;body&gt;</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- EJERCICIOS HTML -->
+    <div id="Ejercicioshtml" class="section">
+        <h1>Ejercicios HTML</h1>
+        <div class="card">
+            <h3>Lista de ejercicios disponibles</h3>
+            <ul>
+                <li><a href="Ej.html" target="_blank">Ej.html</a></li>
+                <li><a href="Ej1.html" target="_blank">Ejercicio 1</a></li>
+                <li><a href="Ej2.html" target="_blank">Ejercicio 2</a></li>
+                <li><a href="Ej3.html" target="_blank">Ejercicio 3</a></li>
+                <li><a href="Ej4.html" target="_blank">Ejercicio 4</a></li>
+                <li><a href="Ej5.html" target="_blank">Ejercicio 5</a></li>
+                <li><a href="Ej6.html" target="_blank">Ejercicio 6</a></li>
+                <li><a href="EjFormulario1.html" target="_blank">Formulario 1</a></li>
+                <li><a href="EjFormulario2.html" target="_blank">Formulario 2</a></li>
+                <li><a href="EjFormularios1.html" target="_blank">Formularios 1</a></li>
+                <li><a href="EjFormularios2.html" target="_blank">Formularios 2</a></li>
+                <li><a href="EjFormularios3.html" target="_blank">Formularios 3</a></li>
+                <li><a href="EjTabla1.html" target="_blank">Tabla 1</a></li>
+                <li><a href="EjTabla2.html" target="_blank">Tabla 2</a></li>
+                <li><a href="EjTablas1.html" target="_blank">Tablas 1</a></li>
+                <li><a href="EjTablas2.html" target="_blank">Tablas 2</a></li>
+                <li><a href="EjTablas3.html" target="_blank">Tablas 3</a></li>
+                <li><a href="EjTablas4.html" target="_blank">Tablas 4</a></li>
+                <li><a href="EjTablas5.html" target="_blank">Tablas 5</a></li>
+                <li><a href="EjTablas6.html" target="_blank">Tablas 6</a></li>
+                <li><a href="EjTablas7.html" target="_blank">Tablas 7</a></li>
+                <li><a href="EjTablas8.html" target="_blank">Tablas 8</a></li>
+                <li><a href="EjTablas9.html" target="_blank">Tablas 9</a></li>
+                <li><a href="EjTablas10.html" target="_blank">Tablas 10</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <div id="css" class="section">
+        <h1>CSS</h1>
+        <p>   CSS significa cascading Style Sheets y es el lenguaje usado para darle estilo a las
+        páginas web. Mientras HTML estructura el contenido, CSS controla colores, tamaños, diseños
+        y el aspecto visual de toda la página.</p>
+    </div>
+
+    <!-- EJERCICIOS CSS -->
+    <div id="Ejercicioscss" class="section">
+        <h1>Ejercicios CSS</h1>
+        <div class="card">
+            <h3>Lista de ejercicios CSS (clic para ver código)</h3>
+
+            <div class="code-item" data-file="T2css.css">T2css.css</div>
+            <div class="code-item" data-file="T3css.css">T3css.css</div>
+            <div class="code-item" data-file="T4css.css">T4css.css</div>
+            <div class="code-item" data-file="T5css.css">T5css.css</div>
+            <div class="code-item" data-file="T6css.css">T6css.css</div>
+            <div class="code-item" data-file="T7css.css">T7css.css</div>
+            <div class="code-item" data-file="T8css.css">T8css.css</div>
+            <div class="code-item" data-file="T9css.css">T9css.css</div>
+            <div class="code-item" data-file="T10css.css">T10css.css</div>
+
+            <div id="code-viewer" class="hidden">
+                <h3>Código del archivo</h3>
+                <pre><code id="code-content"></code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABLA PERIODICA -->
+    <div id="Tablaperiodica" class="section">
+        <h1>Tabla Periódica</h1>
+
+        <div style="width: 100%;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe title="TPEH" frameborder="0" width="1200" height="675"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="https://view.genially.com/68d0c8813acdf629c7b25fa0"
+                allowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACERCA DE MÍ -->
+    <div id="Acercademi" class="section">
+        <h1>Acerca de mí</h1>
+        <p>(Hola soy oscar fernando santillan castañeda...)</p>
+    </div>
+
+  <!-- REVISTA -->
+<div id="revista" class="section">
+    <h1>Revista</h1>
+    <div class="card">
+        <h3>Mi revista digital</h3>
+        <iframe 
+            src="https://heyzine.com/flip-book/1dd5e3c547.html?classId=4ed48890-731d-45f3-83c6-5ef5685ab437&assignmentId=87322b32-dcf9-496d-9846-f666de15ce63&submissionId=f9409b27-a21c-1f4c-a626-6c087bf39084" 
+            width="100%" 
+            height="600px">
+        </iframe>
+    </div>
+</div>
+
+
+    <!-- PRESENTACIONES -->
+    <div id="presentaciones" class="section">
+        <h1>Presentaciones</h1>
+        <div class="card">
+            <h3>Presentaciones del curso</h3>
+            <ul>
+                <li><a href="presentaciones/Bases de datos (1).pdf" target="_blank">Bases de datos</a></li>
+                <li><a href="presentaciones/CLASEWEB.pdf" target="_blank">CLASEWEB</a></li>
+                <li><a href="presentaciones/Get - Post.pdf" target="_blank">Get / Post</a></li>
+                <li><a href="presentaciones/manejo de sesiones.pdf" target="_blank">Manejo de sesiones</a></li>
+                <li><a href="presentaciones/METODOS DE COMUNICACION ENTRE CLIENTE Y SERVIDOR (GET Y POST).pdf" target="_blank">Métodos de comunicación</a></li>
+                <li><a href="presentaciones/Publicación local y remota (1).pdf" target="_blank">Publicación local y remota</a></li>
+            </ul>
+
+
+            <div id="visor-presentacion" style="margin-top:20px; width:100%; height:650px;"></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script>
+
+// Activar audio al hacer clic
+document.addEventListener("click", () => {
+    const audio = document.getElementById("bg-audio");
+    audio.muted = false;
+    audio.play();
+});
+
+// Cambiar secciones
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        showSection(this.getAttribute('data-target'));
+    });
+});
+
+// Mostrar código CSS
+document.querySelectorAll('.code-item').forEach(item => {
+    item.addEventListener('click', () => {
+        let file = item.getAttribute('data-file');
+
+        fetch(file)
+            .then(res => res.text())
+            .then(code => {
+                document.getElementById("code-content").textContent = code;
+                document.getElementById("code-viewer").classList.remove("hidden");
+            });
+    });
+});
+
+// Visor de PDFs
+document.querySelectorAll('#presentaciones a').forEach(link => {
+    link.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        let pdf = this.getAttribute('href');
+        document.getElementById("visor-presentacion").innerHTML =
+            `<iframe src="${pdf}" width="100%" height="100%" style="border:none;"></iframe>`;
+    });
+});
+
+showSection("principal");
+
+</script>
+
+</body>
+</html>
